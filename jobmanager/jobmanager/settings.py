@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'knox',
     'useraccounts',
-    'userupload'
 ]
 
 # AUTH_USER_MODEL = 'useraccounts.CustomUser'
