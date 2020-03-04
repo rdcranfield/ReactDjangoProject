@@ -29,7 +29,6 @@ export const addJob = job => (dispatch, getState) => {
         });
     }).catch(error => dispatch(getErrorLog(error.response.data, error.response.status)));
 };
-// DELETE
 export const deleteJob = (id) => (dispatch, getState) => {
     axios.delete(`/api/jobs/${id}/`, getAuthTokenConfig(getState)).then(res => {
         dispatch(createNotification({ jobDeleted: "Deleted Job"}));

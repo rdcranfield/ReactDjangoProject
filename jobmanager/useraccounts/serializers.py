@@ -12,14 +12,7 @@ class FileSerializer(serializers.ModelSerializer):
     class Meta:
         model = PDFFile
         fields = "__all__"
-
-    # def create(self, serializer):
-    #     serializer.save(owner=self.request.user)
-    #     print ("yp ", type_data)
-    #     print ("yp2 ", type_data['user_type'])
-    #    # user_type = serializers.CharField()
-    #     userType = UserType.objects.create(**type_data)
-    #     return UserType.objects.create(userType=user_type)
+        
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User

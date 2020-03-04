@@ -6,8 +6,6 @@ urlpatterns = [
     path('', include('frontend.urls')),
     path('', include('jobs.urls')),
     path('', include('useraccounts.urls')),
-    
-    # path('', include('userupload.urls')),
 ]
 if settings.DEBUG:
   urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
